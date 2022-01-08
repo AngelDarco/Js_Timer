@@ -3,28 +3,36 @@
     <head>
         <meta charset="UTF-8">
         <title>Count Down</title>
+        <link rel="shortcut icon" href="./img/icono.webp" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
         <script src="app.js"></script>
     </head>
     <body>
-        <h1 class="titulo">Cuanto Falta para El 2022</h1>
-        <div class="numero">
-            <div>
-                <span class="tiempo__Numero dias">0</span>
-                <span class="tiempo__letras">Dias</span>
+        <div class="selector">
+            <div class="timer__one">
+                <label for="timer">Timer: </label>
+                <input type="date" name="timer" id="timer">
             </div>
-            <div>
-                <span class="tiempo__Numero horas">0</span>
-                <span class="tiempo__letras">Horas</span>
-            </div>
-            <div>
-                <span class="tiempo__Numero minutos">0</span>
-                <span class="tiempo__letras">Minutos</span>
-            </div>
-            <div>
-                <span class="tiempo__Numero segundos">0</span>
-                <span class="tiempo__letras">Segundos</span>
-            </div>
+        </div>
+            <h1 class="titulo">how much is left until: </h1>
+            <span class="titulo year"></span>
+            <div class="numero">
+                <div>
+                    <span class="tiempo__Numero dias">0</span>
+                    <span class="tiempo__letras">Days</span>
+                </div>
+                <div>
+                    <span class="tiempo__Numero horas">0</span>
+                    <span class="tiempo__letras">Hours</span>
+                </div>
+                <div>
+                    <span class="tiempo__Numero minutos">0</span>
+                    <span class="tiempo__letras">Minutes</span>
+                </div>
+                <div>
+                    <span class="tiempo__Numero segundos">0</span>
+                    <span class="tiempo__letras">Seconds</span>
+                </div>
         </div>
     </body>
 </html>

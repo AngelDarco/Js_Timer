@@ -2,9 +2,11 @@ document.addEventListener('DOMContentLoaded',function () {
     setInterval(tiempo,1000);
 })
 
-
     function tiempo(){
-        const cronometro = "1 Jan 2023";
+        const timer = document.getElementById('timer').value;        
+        let cronometro = "1 Jan 2023";
+        if(timer!='') cronometro = timer;
+        document.querySelector('.year').innerHTML = cronometro;
         const tiempo = parseInt((new Date(cronometro).getTime()/31557600000-51)*365);
         const otrotiempo = Math.ceil((new Date().getTime() - 1609437600000)/31557600000*365);
        
@@ -22,4 +24,17 @@ document.addEventListener('DOMContentLoaded',function () {
         hora.innerHTML = horas;
         minuto.innerHTML = minutos;
         segundo.innerHTML = segundos; 
+
+        
+        if(fecha.getSeconds()>=50) segundo.style.color = 'red';
+        else segundo.style.color = '';
+        if(fecha.getMinutes()>=55) minuto.style.color = 'red';
+        else minuto.style.color = '';
+        if(fecha.getHours>=23) hora.style.color = 'red';
+        else hora.style.color = '';
+        if(fecha.getDay>= fecha.getDay-334) dia.style.color = 'orange';
+        else if (fecha.getDay>= fecha.getDay-355) dia.style.color = 'red';
+        else dia.style.color = '';
     }
+
+
