@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #222;
+}
+
+body{
+    color: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    background-image: url('./img/1.jpg');
+    background-position: top;
+}
+
+    .titulo{
+        text-align: center;
+        font-weight: bold;
+        font-family: monospace;
+        font-size: 35px;
+        
+    }
+
+.numero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+    .numero div{
+       margin: 0 20px;   
+    }
+    .numero div span{
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+    }
+       
+
+.numero .tiempo__Numero{
+    font-size: 120px;
+}
